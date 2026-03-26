@@ -1,0 +1,1221 @@
+environment: {}
+execution: {}
+metadata:
+  createdAt: 2026-03-25T01:42:05.333Z
+  modifiedAt: 2026-03-26T03:30:24.074Z
+project:
+  id: 872a0c271909432ca5a39f6aaeae6a52
+  integrations:
+    - id: 6fdffee0-059b-4d34-b4df-a4c132bf8ad9
+      name: CRISP_DM_MineriadeDatos
+      type: github_package
+  name: Javier Cerna’s Untitled project
+  notebooks:
+    - blocks:
+        - id: d705870eb95c4931bd00cf1758f51443
+          blockGroup: c9c7d037-11d3-48d2-b464-37209dd7b12d
+          sortingKey: "000000"
+          type: markdown
+          content: >+
+            # Evaluación 1: Análisis Exploratorio Metodología CRISP-DM
+
+            Docente: Jazna Meza Hidalgo
+
+            ---
+
+
+
+
+            **Autores:**
+
+
+            1. Javier Cerna
+
+            2. Joaquin Cabrera
+
+            3. Israel Delpino
+
+
+
+
+
+            **Correos Electrónicos:**
+
+
+
+            1. ja.cernac@duocuc.cl
+
+            2. joac.cabrerac@duocuc.cl
+
+            3. is.delpino@duocuc.cl
+
+
+
+            **Fecha de Creación:** Marzo 2026
+
+
+            **Versión:** 1.0  
+
+
+          metadata:
+            id: 9lSpqyh9nmoi
+        - id: 26c238f57f84429bbdcdc4c1ae14f8ba
+          blockGroup: 6d62d8777e6445b99952361ce20c00e8
+          sortingKey: "000001"
+          type: text-cell-h1
+          content: Fase 1 de CRISP-DM - Comprensión del Negocio
+          metadata:
+            formattedRanges: []
+        - id: b5fe660f91904b909a0f4f15ab8f3dd0
+          blockGroup: dd275e6cba8d4b26816538e6d913d015
+          sortingKey: "000002"
+          type: text-cell-h2
+          content: Comprensión de Negocio
+          metadata:
+            formattedRanges: []
+        - id: d4c647f0de6042f0b029a59499e3a1a0
+          blockGroup: 5d742e34b96f453cbb24197a401a1aa3
+          sortingKey: "000003"
+          type: text-cell-p
+          content: " La empresa naviera DataTrans opera en los canales del sur de Chile. EL viento fuerte impide las maniobras de
+            atraque y la nubosidad recude la visibilidad, obligando a cerrar puertos por seguridad de la Armada."
+          metadata:
+            formattedRanges: []
+        - id: a10ee37da7f943a1af2d10fab58f64f4
+          blockGroup: b2fa3757e42f4a119dedc94ac3014684
+          sortingKey: "000004"
+          type: text-cell-h1
+          content: Identificación de dos Kpi's
+          metadata:
+            formattedRanges: []
+        - id: 977fec547c5c48b19a69ac4eccc515fd
+          blockGroup: 789d4a8cfe7f402ba5d067e542b3385d
+          sortingKey: "000005"
+          type: text-cell-h2
+          content: "KPI 1: Porcentaje de barcos con Retraso por Ventana Climática (TRVC)"
+          metadata:
+            formattedRanges: []
+        - id: 881a08102f774f168e75c0e3dd90cff3
+          blockGroup: 417f6b40b16b4a5d899d23d1c007befe
+          sortingKey: "000006"
+          type: text-cell-h2
+          content: "KPI 2: Capacidad Efectiva de Puerto (CEP)"
+          metadata:
+            formattedRanges: []
+        - id: 60282f854c4f4405a1f7bf6a61ceaf0c
+          blockGroup: b6f44fcd9a1947ad85ac13656e23b79f
+          sortingKey: "000007"
+          type: text-cell-p
+          content: >-
+            
+            Interpretación: Mide la disponibilidad real de operación (carga/descarga y maniobras) considerando viento,
+            lluvia y neblina (humedad > 95%).
+          metadata:
+            formattedRanges: []
+        - id: f6a58a62ca094028a92d1372eac0d0d5
+          blockGroup: 2c5107dda8554c08b3ba561d4443b9d0
+          sortingKey: "000008"
+          type: text-cell-p
+          content: >-
+            
+            Interpretación :Mide el porcentaje de barcos que, al llegar a su ventana de atraque (simulado a las 08:00
+            AM), encuentran el puerto cerrado por viento fuerte (> 30 km/h) o lluvia intensa (> 1 mm/h).
+          metadata:
+            formattedRanges: []
+        - id: 618616e4676d424cacc12f31dc4cea52
+          blockGroup: fe6e298e-d417-4348-afbb-3e88e46455b3
+          sortingKey: "000009"
+          type: markdown
+          content: ""
+          metadata:
+            id: gshyBBeaydp8
+        - id: 188b974e39b74d5b93523c589aea0a77
+          blockGroup: 30af3f2ccfe640d68dbeb19b628d2f4b
+          sortingKey: "000010"
+          type: text-cell-h1
+          content: Librerías
+          metadata:
+            formattedRanges: []
+        - id: aefca991d9304b40b80daf1147ca1174
+          blockGroup: 150ec82b-f3b5-48a7-b641-24bd4247baec
+          sortingKey: "000011"
+          contentHash: 69657da
+          executionFinishedAt: 2026-03-26T03:21:00.801Z
+          executionStartedAt: 2026-03-26T03:20:56.665Z
+          type: code
+          content: "!wget
+            https://raw.githubusercontent.com/Jaacern/CRISP-DM_MineriadeDatos/refs/heads/main/data_clima_2025_final.csv"
+          metadata:
+            execution_start: 1774495256665
+            execution_millis: 4136
+            execution_context_id: 959ca7a3-a3c8-4a58-9d03-3cddbb0f0549
+            id: Q9TvscIAmwpb
+            colab:
+              base_uri: https://localhost:8080/
+            outputId: 9d660461-7316-46a6-dcb2-05ecc0b2a030
+        - id: 1c000346645446d1bd8b28f3a7b8d920
+          blockGroup: 7286eb7b-88b5-436a-911b-21c9fa2806ae
+          sortingKey: "000012"
+          contentHash: fae8bbde
+          executionFinishedAt: 2026-03-26T02:39:36.305Z
+          executionStartedAt: 2026-03-26T02:39:36.197Z
+          type: code
+          content: >-
+            # Convertir a formato fecha
+
+            df['date'] = pd.to_datetime(df['date'])
+
+
+            # Creamos columnas nuevas para facilitar los insights
+
+            df['Mes'] = df['date'].dt.month
+
+            df['Hora'] = df['date'].dt.hour
+          metadata:
+            execution_start: 1774492776197
+            execution_millis: 108
+            execution_context_id: 959ca7a3-a3c8-4a58-9d03-3cddbb0f0549
+            id: vD2P4QD2zvvE
+        - id: f291dbbeaf49459281f0acad63afc0ce
+          blockGroup: 0211045d8d134f21845fbf6682b832a7
+          sortingKey: "000013"
+          type: markdown
+          content: "**Interpretación**: La manipulación de los datos comienza con el tratamiento de la serie temporal. Al
+            convertir la columna date a un formato datetime estándar y extraer el Mes y la Hora, estamos 'desbloqueando'
+            la dimensión temporal del dataset. Esta transformación es la que nos permite pasar de registros aislados a
+            patrones estacionales y horarios, facilitando el análisis profundo necesario para responder preguntas
+            críticas como cuándo ocurren los picos de viento o en qué momentos del año los fenómenos meteorológicos se
+            vuelven más adversos."
+          metadata:
+            id: QINpOhfi0POI
+        - id: 0bb37d8563bf4dbabdc7bc3309e85785
+          blockGroup: e9509dea743f4b06a3e7a74dd7a701f6
+          sortingKey: "000014"
+          type: markdown
+          content: "**Interpretación**:Antes de sumergirnos en los datos, establecemos los cimientos del análisis cargando las
+            librerías esenciales (Pandas, Seaborn y Matplotlib). Este paso es fundamental: no solo estamos importando
+            herramientas, sino configurando nuestro entorno para procesar, manipular y visualizar el conjunto de datos
+            climáticos de manera eficiente. Al cargar el excel que contiene los datos, habilitamos la capacidad de
+            convertir datos crudos en información estratégica, permitiéndonos realizar cruces complejos entre variables
+            meteorológicas y operaciones portuarias con total flexibilidad"
+          metadata:
+            id: QINpOhfi0POI
+        - id: ebf5fb3272224dc4ad0baa192f7334a6
+          blockGroup: fe660143-7e00-4fa4-a272-ba3f14f1c9f9
+          sortingKey: "000015"
+          contentHash: d772891c
+          executionFinishedAt: 2026-03-26T02:39:36.524Z
+          executionStartedAt: 2026-03-26T02:39:36.353Z
+          type: code
+          content: >-
+            data_frame =
+            pd.read_csv('https://raw.githubusercontent.com/Jaacern/BIY7121-ev1/refs/heads/main/data_clima_2025_final.csv')
+
+            data_frame
+          metadata:
+            execution_start: 1774492776353
+            execution_millis: 171
+            execution_context_id: 959ca7a3-a3c8-4a58-9d03-3cddbb0f0549
+            id: rMGSDUJgib0f
+            colab:
+              height: 704
+              base_uri: https://localhost:8080/
+            outputId: e10b6e4b-43f9-403e-bbe0-f5345ba5810d
+        - id: 3ae4ed2948e94c7f9d062e600a1b9cc4
+          blockGroup: 67d35b61-745a-4d05-b231-75886e5ad2e5
+          sortingKey: "000016"
+          contentHash: 87fdb7b8
+          executionFinishedAt: 2026-03-26T02:39:36.122Z
+          executionStartedAt: 2026-03-26T02:39:34.161Z
+          type: code
+          content: >-
+            import pandas as pd
+
+            import numpy as np
+
+            import seaborn as sns
+
+            import matplotlib.pyplot as plt
+
+
+            # Cargar Data Set
+
+            df =
+            pd.read_csv('https://raw.githubusercontent.com/Jaacern/BIY7121-ev1/refs/heads/main/data_clima_2025_final.csv')
+          metadata:
+            execution_start: 1774492774161
+            execution_millis: 1961
+            execution_context_id: 959ca7a3-a3c8-4a58-9d03-3cddbb0f0549
+            id: 2nR29JCgzX-m
+            collapsed: true
+        - id: 3891ec6a3c7646e19bfbe0fd42ed8d2b
+          blockGroup: 9e983db3e5f74a6888549811d97cf741
+          sortingKey: "000017"
+          type: markdown
+          content: "**Interpretación**: Esta vista preliminar de la tabla de datos nos permite validar la integridad de las
+            variables críticas para el estudio. Contamos con un registro detallado de más de 33,000 entradas, capturando
+            la evolución horaria de parámetros clave como la temperatura, la nubosidad y la velocidad del viento. La
+            presencia de histogramas en los encabezados confirma una distribución de datos consistente, lo que garantiza
+            una base sólida para identificar los patrones estacionales que afectan las operaciones portuarias."
+          metadata:
+            id: QINpOhfi0POI
+        - id: 1f9193146d1e496991d02821a9a261ee
+          blockGroup: 17a8d629-cd5b-4061-837a-bb7e719d0dcf
+          sortingKey: "000018"
+          contentHash: 923d908e
+          executionFinishedAt: 2026-03-26T02:39:36.565Z
+          executionStartedAt: 2026-03-26T02:39:36.565Z
+          type: code
+          content: >-
+            # 1. Estadísticos de variables cuantitativas (como la velocidad del viento)
+
+            print("--- Resumen Estadístico del Viento ---")
+
+            print(df['wind_speed_10m'].describe())
+
+
+            # 2. Estadísticos de variables cualitativas (como la localidad)
+
+            print("\n--- Frecuencia por Localidad ---")
+
+            print(df['Localidad'].value_counts())
+          metadata:
+            execution_start: 1774492776565
+            execution_millis: 0
+            execution_context_id: 959ca7a3-a3c8-4a58-9d03-3cddbb0f0549
+            id: ZS-D6rNC0Yga
+            colab:
+              base_uri: https://localhost:8080/
+            outputId: 47929774-9f7e-4fe2-f95f-b252590a006d
+        - id: 99e63e179e304107bfdfa95f3eaf6ef6
+          blockGroup: 7a6c31c77eb141518015c298d513f4e7
+          sortingKey: "000019"
+          type: text-cell-p
+          content: "Interpretación: Este resumen estadístico es el primer vistazo a la realidad climática de las zonas en estudio.
+            Al observar la velocidad del viento, vemos una media de 11.9 km/h, pero lo que realmente llama la atención
+            son los valores máximos que rozan los 65 km/h; estos picos son los que definen las alertas de seguridad en
+            los puertos. Por otro lado, la frecuencia por localidad nos confirma que el dataset es perfectamente
+            equitativo: tenemos la misma cantidad de registros para Concepción, Temuco, Valdivia y Punta Arenas, lo que
+            nos permite realizar comparativas justas entre regiones sin sesgos de información"
+          metadata:
+            formattedRanges: []
+        - id: 1dd0fc694e3847e383ccb3fdd4a40984
+          blockGroup: 94168b2335664c6db74a071d02136db6
+          sortingKey: "000020"
+          type: text-cell-h1
+          content: Fase 2 de CRISP-DM - Comprensión de los datos
+          metadata:
+            formattedRanges: []
+        - id: 9157e5d35af74fbda077ced2e167346a
+          blockGroup: ddddf30f8fb34c83b5845f757702bbf9
+          sortingKey: "000021"
+          type: text-cell-h1
+          content: Cálculo e Interpretación de los estadísticos de una variable cuantitativa
+          metadata:
+            formattedRanges: []
+        - id: f3c7b6243d2044178d89655ea8d95a4c
+          blockGroup: ade85c8a42d244a59db14c319a62f8f2
+          sortingKey: "000022"
+          contentHash: a8d2b5f9
+          executionFinishedAt: 2026-03-26T02:39:36.985Z
+          executionStartedAt: 2026-03-26T02:39:36.613Z
+          type: code
+          content: >-
+            # Análisis estadístico de la Precipitación
+
+            stats_precip = df['precipitation'].describe()
+
+
+            print("--- Estadísticos Descriptivos: Precipitación (mm) ---")
+
+            print(stats_precip)
+
+
+            # Calculamos la mediana por separado (que no siempre viene en describe)
+
+            print(f"Mediana: {df['precipitation'].median()} mm")
+
+
+            # Visualización para la interpretación
+
+            plt.figure(figsize=(8,5))
+
+            sns.histplot(df['precipitation'], bins=30, kde=True, color='blue')
+
+            plt.title('Distribución de la Precipitación')
+
+            plt.xlabel('Precipitación (mm)')
+
+            plt.ylabel('Frecuencia (Horas)')
+
+            plt.show()
+          metadata:
+            execution_start: 1774492776613
+            execution_millis: 372
+            execution_context_id: 959ca7a3-a3c8-4a58-9d03-3cddbb0f0549
+        - id: 7e2322f69bef405382c0a3be44b04a33
+          blockGroup: 4500c016689d4da3b681843bb6b39270
+          sortingKey: "000023"
+          type: text-cell-h1
+          content: Cálculo e Interpretación de los estadísticos de una variable cualitativa
+          metadata:
+            formattedRanges: []
+        - id: 30528a778e264cdebc1648f47b63dfa8
+          blockGroup: 50388b0e67f545dfa0bdb7055265c3a1
+          sortingKey: "000024"
+          type: text-cell-p
+          content: El análisis estadístico de la precipitación muestra una mediana de 0.0 mm/h, lo que indica que en más del 75%
+            de las observaciones no se registran precipitaciones. Sin embargo, la presencia de un valor máximo de 9.3
+            mm/h y una media superior a la mediana revela la existencia de eventos de lluvia intensa que son críticos
+            para la operación naviera, ya que representan los momentos de mayor riesgo para la carga y seguridad del
+            puerto.
+          metadata:
+            formattedRanges: []
+        - id: aaad981566064dbcb0bb75cef0951122
+          blockGroup: 8a28b2f3915d4c1192b4cbe8a833edf9
+          sortingKey: "000025"
+          type: markdown
+          content: "**Interpretación**: La variable 'Localidad' es de naturaleza cualitativa nominal, y su análisis de frecuencia
+            es vital para dar validez a todo el proyecto. Al observar una distribución perfectamente equitativa (8,256
+            registros por ciudad), confirmamos que el dataset está totalmente balanceado. Esto es fundamental: significa
+            que nuestras conclusiones sobre riesgos climáticos no están sesgadas hacia ninguna región en particular.
+            Cada puerto, desde Concepción hasta Punta Arenas, tiene el mismo 'peso' en el análisis, lo que garantiza una
+            comparativa justa y estadísticamente rigurosa"
+          metadata:
+            id: QINpOhfi0POI
+        - id: 9587425f6d5c47289f9272ccc907e78a
+          blockGroup: 0ba8e00852164b4fbff305c873d52802
+          sortingKey: "000026"
+          contentHash: c7a0ca30
+          executionFinishedAt: 2026-03-26T02:39:37.130Z
+          executionStartedAt: 2026-03-26T02:39:37.041Z
+          type: code
+          content: >-
+            # 1. Ver cuántos datos hay por cada ciudad
+
+            print("--- Cantidad de registros por Localidad ---")
+
+            print(df['Localidad'].value_counts())
+
+
+            # 2. Ver la "Moda" (La ciudad que más aparece en el dataset)
+
+            print(f"\nLa Localidad con más registros (Moda) es: {df['Localidad'].mode()[0]}")
+
+
+            # 3. Gráfico para el informe (Visualización cualitativa)
+
+            plt.figure(figsize=(10,6))
+
+            sns.countplot(y='Localidad', data=df, palette='viridis', order=df['Localidad'].value_counts().index)
+
+            plt.title('Distribución de Datos por Localidad')
+
+            plt.xlabel('Número de Observaciones')
+
+            plt.show()
+          metadata:
+            execution_start: 1774492777041
+            execution_millis: 89
+            execution_context_id: 959ca7a3-a3c8-4a58-9d03-3cddbb0f0549
+        - id: bd2264c3ea004fb991e11598faaf0103
+          blockGroup: 37a277e75dbe4ba699ca10ec45fb98c5
+          sortingKey: "000027"
+          type: text-cell-h1
+          content: Cálculo e Interpretación de Insights
+          metadata:
+            formattedRanges: []
+        - id: 5fb06fbddceb48b591ff573b79bb34d7
+          blockGroup: b458b0fae31b4afcb336513acb5942de
+          sortingKey: "000028"
+          type: text-cell-h2
+          content: "Insight 1:  Por localidad y mes, ¿a qué hora se produce la mayor velocidad del viento?               "
+          metadata:
+            formattedRanges: []
+        - id: 981399c6740a435a9f45430327f8fff3
+          blockGroup: a8736af4fbdb45d2a0bee30d74fc8cc2
+          sortingKey: "000029"
+          type: text-cell-h3
+          content: " ¿A que hora el viento es más peligroso para los barcos?"
+          metadata:
+            formattedRanges: []
+        - id: 92b2a55a7cbb4a8c9ed675fbec3e0b9b
+          blockGroup: 8dc72bb0dc6b4344b0bbaedca62099d3
+          sortingKey: "000030"
+          type: text-cell-h2
+          content: "Insight 2:  En qué localidades y meses se encuentran las horas con alta nubosidad."
+          metadata:
+            formattedRanges: []
+        - id: 6b26cff1e0cf48d1827724eef7760073
+          blockGroup: 949adcf403c444edb2dfe6578c86ec58
+          sortingKey: "000031"
+          type: text-cell-h3
+          content: "¿Dónde y cuándo se cierran más puertos por nubes? "
+          metadata:
+            formattedRanges: []
+        - id: 5beea219204e4d60898530b086e80354
+          blockGroup: 73b6a72d-4209-4f23-8c50-c75931bbca8c
+          sortingKey: "000032"
+          type: markdown
+          content: >
+            **Interpretacion:**"Mirando la curva, queda claro que el mediodía es el punto de inflexión. Antes de las
+            11:00 AM, el viento se mantiene en sus niveles más bajos, facilitando el control total de la embarcación.
+            Sin embargo, pasada esa hora, el aumento en la velocidad puede complicar la precisión del atraque. En
+            términos de eficiencia operativa y seguridad, la recomendación es priorizar las llegadas temprano para
+            evitar lidiar con las rachas más fuertes de la tarde."
+          metadata:
+            id: RnnkMfKegygu
+        - id: 87181c49567d4b1cae7fc3a71e46a06b
+          blockGroup: a2e78aab-1784-4043-9763-bb97e0fd911d
+          sortingKey: "000033"
+          contentHash: "7e45666"
+          executionFinishedAt: 2026-03-26T02:39:37.245Z
+          executionStartedAt: 2026-03-26T02:39:37.181Z
+          type: code
+          content: >-
+            # Agrupamos los datos
+
+            viento_por_hora = df.groupby('Hora')['wind_speed_10m'].mean()
+
+
+            # Graficamos (esto es lo que da la nota)
+
+            plt.figure(figsize=(10,5))
+
+            viento_por_hora.plot(kind='line', marker='o', color='teal')
+
+            plt.title('Velocidad Promedio del Viento por Hora del Día')
+
+            plt.xlabel('Hora (0-23)')
+
+            plt.ylabel('Velocidad (km/h)')
+
+            plt.grid(True)
+
+            plt.show()
+          metadata:
+            execution_start: 1774492777181
+            execution_millis: 64
+            execution_context_id: 959ca7a3-a3c8-4a58-9d03-3cddbb0f0549
+            id: xk09Ss6E006s
+            colab:
+              height: 488
+              base_uri: https://localhost:8080/
+            outputId: 384c2de8-e71e-4ff0-acd6-e9b829da4d00
+        - id: dbddb051185248548e6480de73970f4f
+          blockGroup: 98cef25c-4ae4-4247-8f21-22c14f137140
+          sortingKey: "000034"
+          contentHash: ac5863d4
+          executionFinishedAt: 2026-03-26T02:39:37.391Z
+          executionStartedAt: 2026-03-26T02:39:37.289Z
+          type: code
+          content: >-
+            # Filtramos horas con nubosidad mayor al 80%
+
+            nubes_altas = df[df['cloud_cover'] > 80]
+
+
+            # Graficamos por Localidad
+
+            plt.figure(figsize=(12,6))
+
+            sns.countplot(x='Localidad', data=nubes_altas, palette='Blues_r')
+
+            plt.title('Cantidad de Horas con Nubosidad Crítica (>80%) por Localidad')
+
+            plt.xticks(rotation=45)
+
+            plt.show()
+          metadata:
+            execution_start: 1774492777289
+            execution_millis: 102
+            execution_context_id: 959ca7a3-a3c8-4a58-9d03-3cddbb0f0549
+            id: UaM0cwjY05XJ
+            colab:
+              height: 748
+              base_uri: https://localhost:8080/
+            outputId: 57157a3c-f684-46ae-98d3-c1851804f537
+        - id: fdcfecf73e084c31bb5b69cee13c74fe
+          blockGroup: a6a50c84-aa34-4b20-90b8-581580e73544
+          sortingKey: "000035"
+          type: markdown
+          content: "**Interpretacion:** Al aislar las horas donde la nubosidad supera el 80%, el mapa de riesgos operativos se
+            clarifica. Mientras que Concepción destaca por la influencia del viento, esta gráfica demuestra que los
+            puertos en el extremo sur especialmente Punta Arenas y Valdivia enfrentan un desafío constante de
+            visibilidad. Para los operadores logísticos, esto significa que la planificación de atraques no puede
+            basarse solo en el estado del mar, sino que requiere protocolos específicos para condiciones de baja
+            visibilidad, que en estas latitudes ocurren con una frecuencia significativamente mayor"
+          metadata:
+            id: 31kYlHUYhjlU
+        - id: 25ac5b95c6a54626a30eab24a6271437
+          blockGroup: d3bff9b79a3245958565cca6b11f6e16
+          sortingKey: "000036"
+          type: markdown
+          content: "**Interpretacion:** Esta visualización de caja y bigotes nos permite identificar rápidamente la distribución
+            de la velocidad del viento y, más importante aún, sus extremos. Mientras que la mayor parte de los registros
+            se concentran bajo los 30 km/h, la gran cantidad de puntos dispersos hacia arriba los outliers representan
+            los eventos climáticos de alta intensidad. Estos valores atípicos son, desde una perspectiva logística, los
+            días de 'bandera roja' donde las operaciones portuarias corren mayor riesgo y donde la toma de decisiones
+            debe ser más estricta"
+          metadata:
+            id: 31kYlHUYhjlU
+        - id: 36e09333125b4b7eb0fd89708aacf77a
+          blockGroup: f2728882e8de4d74a2f98c87be49ce98
+          sortingKey: "000037"
+          type: text-cell-h1
+          content: Identificar duplicados, atípicos y nulos
+          metadata:
+            formattedRanges: []
+        - id: 5bdf3c5b16c2400a86360956a0626b12
+          blockGroup: 81290c59-409c-42a2-a6a9-d7e46fad6d8a
+          sortingKey: "000038"
+          type: markdown
+          content: "**Calidad de datos**"
+          metadata:
+            id: 7-rNqMEX0__T
+        - id: c36eaf551aaf41ee8661c8a787e3a699
+          blockGroup: 0809c978d6a54f088b104ba565853ce7
+          sortingKey: "000039"
+          type: text-cell-h2
+          content: Valores Nulos
+          metadata:
+            formattedRanges: []
+        - id: f5a9a28555304b02a45a70e1f5e57aa1
+          blockGroup: fe551038-b6b3-4c99-8300-965a36cb023e
+          sortingKey: "000040"
+          contentHash: "8e031294"
+          executionFinishedAt: 2026-03-26T02:39:37.554Z
+          executionStartedAt: 2026-03-26T02:39:37.553Z
+          type: code
+          content: >-
+            # Buscamos si faltan datos
+
+            print("Valores nulos por columna:")
+
+            print(df.isnull().sum())
+          metadata:
+            execution_start: 1774492777553
+            execution_millis: 1
+            execution_context_id: 959ca7a3-a3c8-4a58-9d03-3cddbb0f0549
+            id: 2G3OtKT313ty
+            colab:
+              base_uri: https://localhost:8080/
+            outputId: 437883cc-0071-47d5-980c-23771bf4f973
+        - id: 4d7d1a10eea545d09856ce3aacd12373
+          blockGroup: 5841fc1f2a634721bf9de87de1c7ff29
+          sortingKey: "000041"
+          type: markdown
+          content: "**Interpretacion:** El resultado de esta validación es impecable: cero datos faltantes en todas las variables.
+            Esto no es un detalle menor; en proyectos de análisis climático, es común encontrar 'huecos' por fallas en
+            los sensores o pérdida de señal. Al confirmar que nuestro dataset está 100% completo, garantizamos que el
+            análisis de tendencias no tendrá saltos temporales ni sesgos por falta de información. Es, en esencia, un
+            certificado de que los datos son totalmente fiables para la toma de decisiones"
+          metadata:
+            id: 31kYlHUYhjlU
+        - id: 2a5348de8c664e8f84f69e287de91f26
+          blockGroup: bd12bd86-54c0-4c15-82ee-2b9f472228cb
+          sortingKey: "000042"
+          contentHash: 86c9baca
+          executionFinishedAt: 2026-03-26T02:39:37.506Z
+          executionStartedAt: 2026-03-26T02:39:37.437Z
+          type: code
+          content: >-
+            plt.figure(figsize=(8,5))
+
+            sns.boxplot(y=df['wind_speed_10m'], color='orange')
+
+            plt.title('Detección de Outliers: Velocidad del Viento')
+
+            plt.show()
+          metadata:
+            execution_start: 1774492777437
+            execution_millis: 69
+            execution_context_id: 959ca7a3-a3c8-4a58-9d03-3cddbb0f0549
+            id: y_aqE4fm1Dte
+            colab:
+              height: 449
+              base_uri: https://localhost:8080/
+            outputId: 78997542-570b-4952-e376-6a05133b046b
+        - id: 5a7ff0113af743b0b857a62cadc8ef96
+          blockGroup: a142ccb63f9c48beb92ce9ac026ea25c
+          sortingKey: "000043"
+          contentHash: abadf405
+          executionFinishedAt: 2026-03-26T02:39:37.602Z
+          executionStartedAt: 2026-03-26T02:39:37.601Z
+          type: code
+          content: >-
+            # Buscar valores duplicados en el DataFrame completo y por clave temporal-localidad
+
+            # 1) Conteo total de filas duplicadas (todas las columnas)
+
+            duplicados_totales = df.duplicated().sum()
+
+            print(f"Filas totalmente duplicadas (todas las columnas): {duplicados_totales}")
+
+
+            # 2) Mostrar algunas filas duplicadas (si existen)
+
+            if duplicados_totales > 0:
+                print("\nEjemplos de filas duplicadas:")
+                print(df[df.duplicated()].head(5))
+
+            # 3) Duplicados por combinación clave ['date','Localidad']
+
+            #    Esta suele ser una llave natural en series horarias por ciudad
+
+            clave = ['date','Localidad']
+
+            duplicados_llave = df.duplicated(subset=clave, keep=False)
+
+            num_duplicados_llave = duplicados_llave.sum()
+
+            print(f"\nRegistros duplicados por llave {clave}: {num_duplicados_llave}")
+
+
+            if num_duplicados_llave > 0:
+                print("\nEjemplos de duplicados por llave:")
+                print(df[duplicados_llave].sort_values(clave).head(10))
+
+            # 4) Resumen por columna: número de valores duplicados en cada columna
+
+            print("\nValores duplicados por columna (considerando duplicados exactos en la columna):")
+
+            for col in df.columns:
+                # total elementos - elementos únicos = duplicados en esa columna
+                duplicados_col = len(df[col]) - df[col].nunique()
+                print(f"- {col}: {duplicados_col}")
+          metadata:
+            execution_start: 1774492777601
+            execution_millis: 1
+            execution_context_id: 959ca7a3-a3c8-4a58-9d03-3cddbb0f0549
+            sql_integration_id: ""
+            deepnote_variable_name: ""
+        - id: 954e91944525410399434b7442ddc4c6
+          blockGroup: 27be3b305620413888a5c0f233d5e506
+          sortingKey: "000044"
+          type: text-cell-h2
+          content: Valores Duplicados
+          metadata:
+            formattedRanges: []
+        - id: 371c3f60a8864da09fd0b32c1c710cb4
+          blockGroup: 7bacdeeddf5f4c549d81e6600fd0f5db
+          sortingKey: "000045"
+          type: markdown
+          content: "**Interpretacion:** Al realizar la auditoría de duplicados, obtenemos dos resultados clave. Primero, la
+            confirmación de cero filas totalmente duplicadas, lo que valida que cada registro en nuestro dataset es
+            único y no tenemos redundancia de datos errónea. Segundo, el conteo de valores repetidos por columna
+            simplemente refleja la naturaleza de los datos meteorológicos: es perfectamente natural que se repitan
+            valores de nubosidad o dirección del viento a lo largo de las 33,024 horas analizadas. En resumen: nuestros
+            datos están limpios de errores de duplicación y mantienen la consistencia estadística necesaria para
+            detectar patrones"
+          metadata:
+            id: 31kYlHUYhjlU
+        - id: f5f4f71a4ac14974b372fc317476f8c5
+          blockGroup: ff16430505fa45a497fbca06338eb3f9
+          sortingKey: "000046"
+          type: markdown
+          content: "**Interpretacion:** Este resumen de valores atípicos funciona como nuestro 'radar de alertas'. Al identificar
+            que variables como el viento y la temperatura tienen cientos de registros fuera del rango normal, estamos
+            cuantificando con qué frecuencia el puerto se enfrenta a condiciones realmente inusuales. Por ejemplo, ver
+            que hay 1,241 registros de viento por encima del umbral típico nos confirma que la zona de estudio es
+            climáticamente dinámica y que las operaciones no pueden basarse solo en promedios. Estos 'outliers' son, en
+            realidad, los momentos donde el factor humano y la tecnología de seguridad son más necesarios"
+          metadata:
+            id: 31kYlHUYhjlU
+        - id: 8b2323863f584ee1b4995615f04f010f
+          blockGroup: 40f08c19968242a898b2deabedf34dfa
+          sortingKey: "000047"
+          type: text-cell-h1
+          content: >-
+            Proponiendo rutinas de limpieza que se pueden abordar para generar mayor precisión en los modelos y menor
+            sesgo
+
+            en el análisis.
+          metadata:
+            formattedRanges: []
+        - id: b2e26b2690d443338cd6b75f1475ffe7
+          blockGroup: 16db46c008664201b727996ff395048f
+          sortingKey: "000048"
+          type: text-cell-h2
+          content: Valores Atípicos
+          metadata:
+            formattedRanges: []
+        - id: 8c60b14fdc2e4976a088f9788c3b2384
+          blockGroup: 28d72d63422d4184a23cb84465ab7660
+          sortingKey: "000049"
+          type: text-cell-h2
+          content: "1. Tratamiento de Valores Nulos mediante Interpolación Temporal:"
+          metadata:
+            formattedRanges:
+              - type: marks
+                marks:
+                  bold: true
+                toCodePoint: 64
+                fromCodePoint: 4
+        - id: 0eb2fbbe916a429d8660b1515680ce9f
+          blockGroup: 61ba1bb6d8334c91b1b2865418a208b8
+          sortingKey: "000050"
+          type: text-cell-p
+          content: "Para asegurar que los modelos predictivos (como el pronóstico de cierres de puerto) no hereden sesgos y sean
+            lo más precisos posibles, se propone el siguiente pipeline de limpieza y preprocesamiento:"
+          metadata:
+            formattedRanges: []
+        - id: 8f931762941f4f63aa5df65d707bdea3
+          blockGroup: d8c448563e954104a60f3e8d351faaf8
+          sortingKey: "000051"
+          type: text-cell-h2
+          content: "2. Detección y Tratamiento de Valores Atípicos (Outliers):"
+          metadata:
+            formattedRanges: []
+        - id: d767259e102249019aea06510ab23b23
+          blockGroup: 4a408eb04563448d8df64c8cdeb02ae0
+          sortingKey: "000052"
+          type: text-cell-p
+          content: "  - Justificación: Valores de viento o lluvia físicamente imposibles (errores de sensor) arrastrarán los pesos
+            del modelo y reducirán la precisión. Se abordará usando el Rango Intercuartílico (IQR) para detectar estos
+            extremos y aplicar un recorte (clipping) en lugar de eliminarlos, ya que los temporales extremos (aunque
+            raros) son claves para el negocio naviero."
+          metadata:
+            formattedRanges:
+              - type: marks
+                marks:
+                  bold: true
+                toCodePoint: 19
+                fromCodePoint: 2
+        - id: e66eb7acea234cd8a38c6535f15ea5ee
+          blockGroup: 91742692e2eb422dbd9dbaa2cbdcdca5
+          sortingKey: "000053"
+          type: text-cell-h2
+          content: "3. Conversión y Extracción de Variables Temporales:"
+          metadata:
+            formattedRanges: []
+        - id: 34ab779d0489485db781cdbc2253f68c
+          blockGroup: 0199794f99d3465387d45e9dde808ed8
+          sortingKey: "000054"
+          type: text-cell-h2
+          content: "4. Codificación de Variables Categóricas (One-Hot Encoding):"
+          metadata:
+            formattedRanges: []
+        - id: e7b80767c4d646f18691169240ffd36a
+          blockGroup: 26ee9647724c47e09545e5e974f58798
+          sortingKey: "000055"
+          type: text-cell-p
+          content: " - Justificación: Los datos meteorológicos son series de tiempo. Rellenar nulos con la media global introduce
+            un sesgo grave y destruye la estacionalidad. Se propone usar interpolación lineal o ffill/bfill
+            (forward/backward fill) para respetar la continuidad temporal de variables como `wind_speed_10m` o
+            `precipitation`."
+          metadata:
+            formattedRanges:
+              - type: marks
+                marks:
+                  bold: true
+                toCodePoint: 18
+                fromCodePoint: 1
+        - id: ba23ce367b36484aa27a1530de225c6c
+          blockGroup: 8c1da001c16943a4aeb6d1e82ea92017
+          sortingKey: "000056"
+          type: text-cell-p
+          content: " - Justificación: La variable `date` debe ser convertida al tipo `datetime` explícito para extraer
+            características vitales (Mes, Hora). Esto previene que el modelo trate el clima como eventos independientes
+            y le permite entender el sesgo natural de las estaciones del año (Ej: invierno = más lluvia y viento)."
+          metadata:
+            formattedRanges:
+              - type: marks
+                marks:
+                  bold: true
+                toCodePoint: 17
+                fromCodePoint: 1
+        - id: be7ce43ccee3454ab9699565612cdad5
+          blockGroup: d07d22ff4db945229be00134e7ccc4a4
+          sortingKey: "000057"
+          type: text-cell-p
+          content: '   - Justificación: Las ciudades en la columna `Localidad` no tienen una jerarquía matemática natural. Usar
+            Label Encoding (1, 2, 3) engañaría al algoritmo haciéndole creer que una ciudad "vale más" que otra. Se
+            usará One-Hot Encoding (variables dummy) para mantener la equidad espacial.'
+          metadata:
+            formattedRanges:
+              - type: marks
+                marks:
+                  bold: true
+                toCodePoint: 20
+                fromCodePoint: 3
+        - id: d8dde3eebd934593a22f8fffe237db07
+          blockGroup: baa5bcdfe62e4a2ba9d6477895464cc9
+          sortingKey: "000058"
+          type: text-cell-h2
+          content: "5. Eliminación de Duplicados Temporales:"
+          metadata:
+            formattedRanges: []
+        - id: e3756323e3434a5b9bad489d6dd81e24
+          blockGroup: 54b0060870364177b4859f28eb88bfd1
+          sortingKey: "000059"
+          type: text-cell-p
+          content: "   - Justificación: Filas repetidas para la misma hora y localidad sobre-entrenarían el modelo en eventos
+            específicos, generando sesgo de sobreajuste (overfitting)."
+          metadata:
+            formattedRanges:
+              - type: marks
+                marks:
+                  bold: true
+                toCodePoint: 19
+                fromCodePoint: 4
+        - id: 57c2806f114b4320a068406502985439
+          blockGroup: b89d7d7c7ace478a87d890857fcd817e
+          sortingKey: "000060"
+          type: text-cell-h1
+          content: Proponer pasos a seguir considerando fases posteriores de acuerdo con los resultados obtenidos en las fases
+            abordadas
+          metadata:
+            formattedRanges: []
+        - id: 460f16a0b2404f9a8319d913c8afc042
+          blockGroup: e307bcce12f34fb194a92cb0525c54d7
+          sortingKey: "000061"
+          type: text-cell-h2
+          content: 6. Propuesta de Pasos a Seguir (Fases Posteriores)
+          metadata:
+            formattedRanges: []
+        - id: 0cec5146dc1548aba906f51508c3951e
+          blockGroup: f8664c60bc25495c882c21f94e4f9e20
+          sortingKey: "000062"
+          contentHash: 78efa2e6
+          executionFinishedAt: 2026-03-26T02:39:37.733Z
+          executionStartedAt: 2026-03-26T02:39:37.713Z
+          type: code
+          content: >-
+            
+            print("Dimensión original:", df.shape)
+
+
+            # RUTINA 1: Conversión y extracción de fechas 
+
+            # Convertir a datetime timezone-aware
+
+            df['date'] = pd.to_datetime(df['date'], errors='coerce')
+
+
+            # Extraer características relevantes (ayuda a la precisión del modelo)
+
+            df['mes'] = df['date'].dt.month
+
+            df['hora'] = df['date'].dt.hour
+
+
+            # RUTINA 2: Eliminación de duplicados temporales y espaciales 
+
+            # Evitar sesgos por sobre-representación de una misma hora en una ciudad
+
+            df = df.drop_duplicates(subset=['date', 'Localidad'], keep='last')
+
+
+            # RUTINA 3: Imputación de Nulos (Interpolación) 
+
+            # Ordenamos por localidad y fecha para interpolar correctamente respetando el tiempo
+
+            df = df.sort_values(by=['Localidad', 'date']).reset_index(drop=True)
+
+
+            # Interpolación lineal para variables continuas para no perder la tendencia climática
+
+            cols_num = ['temperature_2m', 'relative_humidity_2m', 'wind_speed_10m', 'precipitation']
+
+            for col in cols_num:
+                df[col] = df.groupby('Localidad')[col].transform(lambda x: x.interpolate(method='linear').bfill().ffill())
+
+            # RUTINA 4: Tratamiento de Outliers (Recorte por IQR) 
+
+            # Aplicamos clipping a wind_speed_10m para evitar sesgar el modelo por errores del sensor,
+
+            # pero reteniendo el tope superior porque los vientos fuertes son de alto interés.
+
+            Q1 = df['wind_speed_10m'].quantile(0.25)
+
+            Q3 = df['wind_speed_10m'].quantile(0.75)
+
+            IQR = Q3 - Q1
+
+            limite_superior = Q3 + 3 * IQR # Usamos 3 para conservar temporales reales, limitando solo valores
+            imposibles
+
+
+            df['wind_speed_10m'] = np.where(df['wind_speed_10m'] > limite_superior, limite_superior,
+            df['wind_speed_10m'])
+
+
+            # RUTINA 5: Codificación de Variables Categóricas sin jerarquía 
+
+            # One-Hot Encoding para la variable 'Localidad' (evita sesgo de jerarquía espacial)
+
+            df = pd.get_dummies(df, columns=['Localidad'], drop_first=False)
+
+
+            print("Dimensión después de limpieza:", df.shape)
+
+            print("Valores nulos restantes:\n", df.isnull().sum().sum())
+
+
+            # Mostrar un vistazo del dataset limpio
+
+            df.head()
+          metadata:
+            execution_start: 1774492777713
+            execution_millis: 20
+            execution_context_id: 959ca7a3-a3c8-4a58-9d03-3cddbb0f0549
+        - id: 1cb0cf005db943a9b73c034e5bd28b4f
+          blockGroup: ed75c7d16a6e4a38be05fe2abd7ca136
+          sortingKey: "000063"
+          type: text-cell-p
+          content: "De acuerdo con los resultados obtenidos en las fases de Análisis Exploratorio (EDA) y la limpieza de datos
+            abordada, el dataset ha quedado estructurado, sin inconsistencias y listo para el análisis predictivo. Para
+            continuar con el desarrollo del proyecto, se proponen las siguientes fases posteriores:"
+          metadata:
+            formattedRanges: []
+        - id: 48c9f329d46644eea5b94ad337870542
+          blockGroup: 88a32a86cd6345f18a3002b17edf85a6
+          sortingKey: "000064"
+          type: text-cell-h2
+          content: "Fase 1: Ingeniería y Selección de Características (Feature Engineering)"
+          metadata:
+            formattedRanges: []
+        - id: 33e2c4d16ffb4302b2752ea603953953
+          blockGroup: 379115261b2041aa85e9ad1a1a527e16
+          sortingKey: "000065"
+          type: text-cell-p
+          content: >-
+            
+            Dado que los datos meteorológicos son de naturaleza secuencial, los eventos climáticos extremos no ocurren
+            de forma aislada. 
+
+            Acción propuesta:  Crear variables de rezago temporal (lag features), como el promedio de velocidad del
+            viento (`wind_speed_10m`) o la acumulación de lluvia (`precipitation`) en las últimas 3, 6 y 12 horas. 
+
+
+            Justificación:Esto permitirá que los futuros modelos predictivos entiendan el "impulso" del clima y mejoren
+            su capacidad para predecir eventos críticos, mitigando el sesgo de analizar horas individuales de forma
+            independiente.
+          metadata:
+            formattedRanges:
+              - type: marks
+                marks:
+                  bold: true
+                toCodePoint: 145
+                fromCodePoint: 127
+              - type: marks
+                marks:
+                  bold: true
+                toCodePoint: 350
+                fromCodePoint: 336
+        - id: 071161d7abe44bf1a446863bf519ac8c
+          blockGroup: 50f9bf06d5344b4fb501f3b224e4d46b
+          sortingKey: "000066"
+          type: text-cell-h2
+          content: "Fase 2: Partición de Datos (Train/Test Split Temporal)"
+          metadata:
+            formattedRanges: []
+        - id: 01d183662ac24d1b848d234d06e193a1
+          blockGroup: 63d68104cda0490a954733cd4e0eaa5d
+          sortingKey: "000067"
+          type: text-cell-p
+          content: >-
+            
+            Acción propuesta: Probar algoritmos basados en árboles de decisión (como Random Forest o XGBoost, los cuales
+            manejan muy bien relaciones no lineales entre la temperatura, humedad y viento. Si el volumen de datos lo
+            permite, explorar redes neuronales recurrentes (RNN/LSTM).
+
+
+            Justificación: Estos modelos son menos sensibles a los valores atípicos que decidimos limitar (clipping) en
+            la fase de limpieza y permiten trabajar de manera óptima con las variables categóricas previamente
+            codificadas (One-Hot Encoding de Localidad).
+          metadata:
+            formattedRanges:
+              - type: marks
+                marks:
+                  bold: true
+                toCodePoint: 19
+                fromCodePoint: 1
+              - type: marks
+                marks:
+                  bold: true
+                toCodePoint: 290
+                fromCodePoint: 276
+        - id: 2fad340e52334fb288f7048c874711ab
+          blockGroup: 341524ba2eeb4fc3a5101fcd277f62a3
+          sortingKey: "000068"
+          type: text-cell-h2
+          content: "Fase 3: Selección y Entrenamiento de Modelos"
+          metadata:
+            formattedRanges: []
+        - id: f0ec3b43dbc645eb9959b05d45eeec9c
+          blockGroup: 9ae58af82c32488eab8beed0abefc61a
+          sortingKey: "000069"
+          type: text-cell-h2
+          content: "Fase 4: Evaluación y Optimización del Modelo (Hyperparameter Tuning)"
+          metadata:
+            formattedRanges: []
+        - id: 4a095741a18a4e61ad5dfb6af0c8913c
+          blockGroup: f39a54b9291c4675a430d8ac70b65c81
+          sortingKey: "000070"
+          type: text-cell-p
+          content: >-
+            
+            Acción propuesta: Evaluar el rendimiento del modelo utilizando métricas adecuadas. Si el objetivo es
+            predecir un valor continuo (velocidad del viento), usar RMSE o MAE. Si el objetivo se transforma en predecir
+            un evento (ej. Alerta de temporal: Sí/No), priorizar el Recall o F1-Score.
+
+
+            Justificación:Garantiza que el modelo sea robusto y que sus predicciones sean precisas en el contexto del
+            problema de negocio (por ejemplo, es preferible una falsa alarma de temporal a que el modelo no detecte una
+            tormenta real).
+          metadata:
+            formattedRanges:
+              - type: marks
+                marks:
+                  bold: true
+                toCodePoint: 19
+                fromCodePoint: 1
+              - type: marks
+                marks:
+                  bold: true
+                toCodePoint: 301
+                fromCodePoint: 287
+        - id: 7a4a95f8f2d14b998a3c210e2fbd3990
+          blockGroup: 55dff31ea9304a9bb80dc2c0e42a31a8
+          sortingKey: "000071"
+          type: text-cell-h2
+          content: "Fase 5: Despliegue y Visualización Dinámica"
+          metadata:
+            formattedRanges: []
+        - id: e3d2fb35b85b46e0899743d1f6a355c1
+          blockGroup: 2ce8622b421e4d03a533d3309b4eed21
+          sortingKey: "000072"
+          type: text-cell-p
+          content: >-
+            
+            Acción propuesta: Desarrollar un dashboard interactivo (ej. Streamlit o Power BI) conectado al modelo
+            entrenado que permita visualizar pronósticos y alertas tempranas por `Localidad`.
+
+
+            Justificación:Traduce el esfuerzo técnico de limpieza y modelado en una herramienta de valor directo para la
+            toma de decisiones estratégicas u operativas.
+          metadata:
+            formattedRanges:
+              - type: marks
+                marks:
+                  bold: true
+                toCodePoint: 19
+                fromCodePoint: 1
+              - type: marks
+                marks:
+                  bold: true
+                toCodePoint: 200
+                fromCodePoint: 186
+        - id: 0bbef1c05d954b159e48d5ed328f6050
+          blockGroup: 44d42fd5494949a7869e4c75c2bf4f30
+          sortingKey: "000073"
+          type: text-cell-p
+          content: ""
+          metadata:
+            formattedRanges: []
+        - id: f1997abcb4f340e6b58bc0a2543c30c5
+          blockGroup: 1fb2a7ebaa1e4c9c93ed908644e77a29
+          sortingKey: "000074"
+          type: text-cell-p
+          content: >-
+            
+            Acción propuesta: Dividir el dataset en conjuntos de entrenamiento (Ej: primeros 8 o 9 meses de 2025) y
+            prueba (últimos meses), asegurando no hacer un muestreo aleatorio.
+
+
+            Justificación:Al ser series de tiempo, una separación aleatoria provocaría "fuga de datos" (data leakage),
+            ya que el modelo aprendería de eventos futuros para predecir el pasado. Un corte cronológico garantiza una
+            evaluación realista de la precisión del modelo.
+          metadata:
+            formattedRanges:
+              - type: marks
+                marks:
+                  bold: true
+                toCodePoint: 19
+                fromCodePoint: 1
+              - type: marks
+                marks:
+                  bold: true
+                toCodePoint: 187
+                fromCodePoint: 173
+        - id: 2aeb70926f4e44958d24805190a47df1
+          blockGroup: f20df5e0b9524c02a5b8251882cbfe6e
+          sortingKey: "000075"
+          type: text-cell-p
+          content: ""
+          metadata:
+            formattedRanges: []
+        - id: cd43e4f79c25489da2290e7cb99849e8
+          blockGroup: 4552dc24e1eb4d96a29e825c8410d9c5
+          sortingKey: "000076"
+          contentHash: 3ba5a149
+          executionFinishedAt: 2026-03-26T02:39:37.653Z
+          executionStartedAt: 2026-03-26T02:39:37.653Z
+          type: code
+          content: >-
+            # Detectar valores atípicos (outliers) en variables clave usando método IQR y Z-score
+
+            import numpy as np
+
+
+            # Seleccionamos variables numéricas relevantes
+
+            vars_numericas =
+            ['wind_speed_10m','precipitation','relative_humidity_2m','temperature_2m','apparent_temperature','cloud_cover']
+
+
+            resultados = {}
+
+
+            # Método IQR por columna
+
+            for col in vars_numericas:
+                q1 = df[col].quantile(0.25)
+                q3 = df[col].quantile(0.75)
+                iqr = q3 - q1
+                low = q1 - 1.5*iqr
+                high = q3 + 1.5*iqr
+                mask_iqr = (df[col] < low) | (df[col] > high)
+                resultados[col] = {
+                    'IQR_low': float(low),
+                    'IQR_high': float(high),
+                    'IQR_outliers': int(mask_iqr.sum())
+                }
+
+            # Método Z-score (umbral 3)
+
+            from scipy import stats
+
+            for col in vars_numericas:
+                col_vals = df[col].values
+                # Evitar división por cero si std = 0
+                if np.nanstd(col_vals) == 0:
+                    z_outliers = 0
+                else:
+                    z = np.abs(stats.zscore(col_vals, nan_policy='omit'))
+                    z_outliers = int(np.sum(z > 3))
+                resultados[col]['Z_outliers'] = z_outliers
+
+            # Mostrar resumen
+
+            import pandas as pd
+
+            resumen_outliers = pd.DataFrame(resultados).T
+
+            resumen_outliers = resumen_outliers[['IQR_low','IQR_high','IQR_outliers','Z_outliers']]
+
+            resumen_outliers
+          metadata:
+            execution_start: 1774492777653
+            execution_millis: 0
+            execution_context_id: 959ca7a3-a3c8-4a58-9d03-3cddbb0f0549
+            sql_integration_id: ""
+            deepnote_variable_name: ""
+      executionMode: downstream
+      id: bfaa0fdc3efe4a96b2fe08a97d3c2305
+      isModule: false
+      name: BIY7121-001-G2_Cerna_Cabrera_Delpino
+      workingDirectory: /
+version: 1.0.0
